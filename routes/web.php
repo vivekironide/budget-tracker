@@ -1,5 +1,7 @@
 <?php
 
+    use App\Http\Controllers\AuthController;
+    use App\Http\Controllers\DashboardController;
     use Illuminate\Support\Facades\Route;
 
     /*
@@ -13,6 +15,6 @@
     |
     */
 
-    Route::get( '/', function () {
-        return view( 'home' );
-    } );
+    Route::get( '/', [ DashboardController::class, 'index' ] )->name( 'home' );
+
+    Route::get( '/login', [ AuthController::class, 'loginView' ] )->name( 'login.view' );

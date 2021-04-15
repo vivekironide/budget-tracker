@@ -34,7 +34,7 @@
                         <i class="fa fa-chevron-down transition-all transform duration-200"></i>
                     </button>
 
-                    <div class="absolute right-0 text-left w-48 dark:bg-gray-600 bg-white rounded shadow-lg hidden focus:outline-none ring-black ring-opacity-5 dropdown-menu px-6 py-6">
+                    <div class="absolute right-0 text-left w-48 dark:bg-gray-600 bg-white rounded shadow-lg hidden focus:outline-none ring-black ring-opacity-5 dropdown-menu px-6 py-6 z-10">
                         <a href="" class="block px-4 py-4 dark:text-gray-100 dark:hover:bg-gray-800 text-sm hover:bg-gray-200">
                             <i class="fa fa-user-circle"></i> Profile
                         </a>

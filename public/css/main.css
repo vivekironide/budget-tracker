@@ -1,0 +1,112 @@
+body, h1, h2, h3, h4, h5 {
+    font-family: 'Kiwi Maru', serif !important;
+}
+
+.shadow-button {
+    box-shadow: 0 20px 30px -16px rgba(9, 9, 16, .2);
+}
+
+.limiter {
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Checkbox Style */
+
+.cbx:not(:last-child) {
+    margin-right: 6px;
+}
+
+.cbx span {
+    float: left;
+}
+
+.cbx span:first-child {
+    position: relative;
+    width: 18px;
+    height: 18px;
+    border-radius: 4px;
+    transform: scale(1);
+    border: 1px solid #CCCFDB;
+    transition: all 0.2s ease;
+    box-shadow: 0 1px 1px rgba(0, 16, 75, 0.05);
+}
+
+.cbx span:first-child svg {
+    position: absolute;
+    top: 3px;
+    left: 2px;
+    fill: none;
+    stroke: #FFFFFF;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-dasharray: 16px;
+    stroke-dashoffset: 16px;
+    transition: all 0.3s ease;
+    transition-delay: 0.1s;
+    transform: translate3d(0, 0, 0);
+}
+
+.cbx span:last-child {
+    line-height: 0.4rem;
+}
+
+.inp-cbx {
+    position: absolute;
+    visibility: hidden;
+}
+
+.inp-cbx:checked + .cbx span:first-child {
+    background: #0077FF;
+    border-color: #0077FF;
+    animation: wave 0.4s ease;
+}
+
+.inp-cbx:checked + .cbx span:first-child svg {
+    stroke-dashoffset: 0;
+}
+
+.inline-svg {
+    position: absolute;
+    width: 0;
+    height: 0;
+    pointer-events: none;
+    user-select: none;
+}
+
+@media screen and (max-width: 640px) {
+    .cbx {
+        width: 100%;
+        margin-bottom: 4px;
+        display: inline-block;
+    }
+}
+
+@-moz-keyframes wave {
+    50% {
+        transform: scale(0.9);
+    }
+}
+
+@-webkit-keyframes wave {
+    50% {
+        transform: scale(0.9);
+    }
+}
+
+@-o-keyframes wave {
+    50% {
+        transform: scale(0.9);
+    }
+}
+
+@keyframes wave {
+    50% {
+        transform: scale(0.9);
+    }
+}
+
+
+
+
